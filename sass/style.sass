@@ -1,0 +1,553 @@
+@import "normalizes.scss"
+@import "resets.scss"
+
+*
+    box-sizing: border-box
+
+@font-face
+    font-family: "MontserattT"
+    src: url('../fonts/Montserrat-Regular.ttf')
+    font-weight: 400
+    font-style: normal
+@font-face
+    font-family: "Montserat-MediumT"
+    src: url('../fonts/Montserrat-Medium.ttf')
+    font-weight: 500
+    font-style: normal
+@font-face
+    font-family: "Montseratt-SemiBoldT"
+    src: url('../fonts/Montserrat-SemiBold.ttf')
+    font-weight: 600
+    font-style: normal
+@font-face
+    font-family: "PlaysdairDisplayT"
+    src: url('../fonts/PlayfairDisplay-Bold.ttf')
+    font-weight: 700
+    font-style: normal
+body
+    font-family: "MontserattT"
+    color: #fff
+    font-size: 16px
+    font-weight: 400
+
+a
+    text-decoration: none
+    color: inherit
+.container
+    max-width: 1140px
+    margin: 0 auto
+    padding: 0 15px
+
+.section
+    background-image: url("../img/bacground-image.jpg")
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center center
+    &__wrapper
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        min-height: 100vh
+        padding-bottom: 150px
+.header-top
+    font-family: "Montserat-MediumT"
+    font-size: 13px
+    padding-top: 30px
+    display: flex
+    justify-content: space-between
+    margin-bottom: 20px
+.nav
+    &__list
+        display: flex
+    &__list-item
+        width: 285px
+        height: 47px
+        display: flex
+        justify-content: center
+        align-items: center
+        border: 1px solid
+        &:first-child
+            border-left: none
+        &:last-child
+            border-right: none
+.btn-box
+    display: flex
+    text-align: center
+    column-gap: 30px
+    justify-content: center
+.btn
+    padding: 15px 30px
+    background-color: #99862A
+    text-transform: uppercase
+    letter-spacing: 0.05em
+    transition: all 0.3s
+    &:hover
+        color: #C4C4DF
+        transition: all 0.3s
+    &:active
+        position: relative
+        top: 1px
+
+.about
+    background: #282828
+    padding: 100px 0
+    &__wrapper
+        border: 1px solid
+        text-align: center
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__title
+        padding-top: 60px
+        margin-bottom: 40px
+    &__hr
+        width: 160px
+        margin-bottom: 40px
+    &__text
+        max-width: 733px
+        line-height: 24px
+        margin-bottom: 50px
+
+    &__img
+        margin-bottom: 60px
+.title
+    font-family: "PlaysdairDisplayT"
+    font-size: 36px
+    line-height: 54px
+
+.description
+    background-color: #E6E3C4
+    color: #282828
+    padding: 80px 0
+    &__wrapper
+        display: flex
+        justify-content: space-between
+        padding: 60px 0px
+        border-top: 1px solid #998431
+        border-bottom: 1px solid #998431
+        gap: 50px
+
+.content
+    max-width: 445px
+    word-wrap: break-word
+    display: flex
+    flex-direction: column
+    line-height: 21px
+    font-size: 14px
+
+    &__title
+        line-height: 24px
+        color: #000000
+
+    &__subtitle
+        font-family: "PlaysdairDisplayT"
+        font-size: 36px
+        line-height: 54px
+        padding-top: 30px
+        margin-bottom: 30px
+    &__first-text
+        padding-top: 30px
+        margin-bottom: 30px
+    &__third-text
+        padding-top: 30px
+        margin-bottom: 30px
+    &__line
+        width: 160px
+        border: 1px solid #282828
+
+.catalog
+    word-wrap: break-word
+
+    &__item
+        display: flex
+        align-items: center
+        border-bottom: 1px solid #282828
+        &:last-child
+            border-bottom: none
+    &__span
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 75px
+        height: 75px
+        border-right: 1px solid #282828
+    &__box
+        padding-left: 30px
+    &__title
+        font-family: "PlaysdairDisplayT"
+        font-size: 18px
+        margin-bottom: 5px
+.content__btn
+    max-width: 254px
+    text-align: center
+    color: #fff
+.description__images
+    max-width: 570px
+    display: flex
+    justify-content: flex-end
+    flex-wrap: wrap
+    gap: 30px
+
+.section-form
+    background-color: #282828
+    overflow: hidden
+    padding: 130px 0 100px
+    &__wrapper
+        border: 3px solid #C4C4C4
+        position: relative
+    &__img-left
+        position: absolute
+        top: -75px
+        left: -40px
+    &__img-right
+        position: absolute
+        top: -65px
+        right: -40px
+
+.form__inner
+    position: relative
+.form
+    font-family: "Montserat-MediumT"
+    max-width: 541px
+    margin: 0 auto
+    justify-content: center
+    text-align: center
+    &__title
+        font-family: "PlaysdairDisplayT"
+        font-size: 36px
+        line-height: 54px
+        position: relative
+        top: -34px
+        background-color: #282828
+    &__hr
+        max-width: 118px
+        border: 1px solid #fff
+        margin-bottom: 40px
+    &__text
+        margin-bottom: 83px
+    &__input-contact
+        display: flex
+        gap: 30px
+        margin-bottom: 41px
+    &__input-adress
+        margin-bottom: 51px
+    &__input-btn
+        width: 100%
+        margin-bottom: 82px
+        border: 1px solid #FFFFFF
+        padding: 15px 30px
+        font-size: 16px
+        line-height: 20px
+        color: #fff
+        background-color: inherit
+        text-transform: uppercase
+        cursor: pointer
+        transition: all 0.5s
+        &:hover
+            background-color: #C4C4DF
+            transition: all 0.5s
+.input
+    width: 100%
+    color: #fff
+    background-color: inherit
+    outline: none
+    border: none
+    border-bottom: 1px solid #fff
+    font-size: 13px
+    line-height: 20px
+    padding-bottom: 10px
+    &::placeholder
+        color: #fff
+
+.footer
+    background-color: #998431
+    &__wrapper
+        padding: 15px 0 45px
+.nav-menu
+    display: flex
+    flex-direction: column
+    &__list-top
+        display: flex
+        justify-content: space-evenly
+        border-top: 1px solid #fff
+        padding: 20px 0
+    &__list-bottom
+        display: flex
+        justify-content: space-evenly
+        align-items: center
+        line-height: 21px
+        font-size: 14px
+        text-transform: uppercase
+
+    &__item-bottom
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 285px
+        height: 60px
+        border: 1px solid #fff
+        &:nth-child(3)
+            display: flex
+            justify-content: space-evenly
+        &:first-child
+            border-left: none
+        &:last-child
+            border-right: none
+
+@media (max-width: 1199px)
+    .section-form
+        padding: 120px 0
+        &__img-left
+            width: 190px
+            top: -59px
+            left: -5px
+        &__img-right
+            width: 190px
+            top: -42px
+            right: -5px
+@media (max-width: 991px)
+    .about
+        padding: 50px 0
+        &__title
+            font-size: 30px
+            line-height: 50px
+            padding-top: 40px
+            margin-bottom: 20px
+        &__hr
+            margin-bottom: 30px
+        &__text
+            padding: 0 15px
+            margin-bottom: 40px
+        &__img
+            margin-bottom: 50px
+    .description
+        padding: 40px 0
+        &__wrapper
+            padding: 30px 0
+        &__images
+            img
+                width: 255px
+    .section-form
+        padding: 100px 0
+        &__img-left
+            display: none
+        &__img-right
+            display: none
+    .nav-menu
+        &__list-top
+            font-size: 12px
+        &__list-bottom
+            font-size: 14px
+            text-align: center
+@media (max-width: 767px)
+    .nav__list
+        justify-content: center
+    .nav__list-item
+        width: 135px
+        height: 40px
+        font-size: 12px
+    .btn
+        font-size: 12px
+        padding: 12px 25px
+    .about
+        padding: 40px 0
+        &__title
+            font-size: 24px
+            padding-top: 30px
+            margin-bottom: 10px
+        &__hr
+            margin-bottom: 20px
+        &__text
+            font-size: 14px
+            margin-bottom: 35px
+        &__img
+            margin-bottom: 45px
+    .description
+        padding: 30px 0
+        &__wrapper
+            display: flex
+            flex-direction: column
+            padding: 20px 0
+            gap: 25px
+        &__images
+            margin: 0 auto
+            img
+                width: 160px
+    .content
+        margin: 0 auto
+        &__subtitle
+            font-size: 32px
+            line-height: 50px
+            padding-top: 20px
+            margin-bottom: 20px
+        &__line
+            width: 120px
+        &__first-text
+            padding-top: 25px
+            margin-bottom: 25px
+        &__third-text
+            padding-top: 25px
+            margin-bottom: 25px
+    .section-form
+        padding: 50px 0
+        &__wrapper
+            border: none
+            position: inherit
+    .form
+        &__title
+            position: inherit
+            font-size: 32px
+            margin-bottom: 20px
+        &__hr
+            width: 100px
+            margin-bottom: 35px
+        &__text
+            margin-bottom: 65px
+        &__input-btn
+            margin-bottom: 65px
+    .footer
+        &__wrapper
+            padding: 15px 0 35px
+    .nav-menu
+        flex-direction: row
+        justify-content: space-around
+        &__list-top
+            border: none
+            flex-direction: column
+            justify-content: space-between
+        &__item-top
+            a
+                border-bottom: 1px solid #fff
+        &__list-bottom
+            display: flex
+            flex-direction: column
+            align-items: center
+        &__item-bottom
+            border: none
+
+@media (max-width: 575px)
+    .section__wrapper
+        padding-bottom: 80px
+    .header-top
+        padding-top: 10px
+        display: flex
+        flex-direction: column
+        gap: 20px
+        &__phone
+            display: contents
+    .nav
+        position: fixed
+        top: 0
+        right: -100%
+        height: 100vh
+        background-color: #323027
+        z-index: 5
+        width: 100%
+        transition: all 1s
+        &__list
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: space-evenly
+            height: 100%
+        &__list-item
+            border: none
+            font-size: 20px
+    .hamburger
+        width: 30px
+        position: absolute
+        top: 40px
+        right: 30px
+        height: 14px
+        z-index: 10
+        span
+            height: 2px
+            width: 100%
+            display: block
+            background-color: #d8d8d8
+            margin-bottom: 4px
+            transition: all 0.5s
+            &:last-child
+                margin-bottom: 0px
+    .hamburger_active
+        span
+            margin-bottom: -2px
+            &:nth-child(1)
+                transform: translateY(3px) rotate(-45deg)
+            &:nth-child(2)
+                display: none
+            &:nth-child(3)
+                transform: translateY(3px) rotate(45deg)
+    .nav_active
+        right: 0
+    .btn
+        font-size: 10px
+    .btn-box
+        display: flex
+        text-align: center
+        flex-direction: column
+        width: 50%
+        margin: 0 auto
+        gap: 20px
+    .about
+        padding: 20px 0
+        &__title
+            font-size: 20px
+            padding-top: 20px
+            margin: 0
+        &__hr
+            width: 90px
+        &__text
+            font-size: 12px
+            margin-bottom: 25px
+        &__img
+            margin-bottom: 25px
+    .description
+        padding: 20px 0
+        &__wrapper
+            display: block
+            padding: 10px 0
+        &__images
+            display: none
+    .content
+        &__subtitle
+            font-size: 28px
+            padding-top: 10px
+            margin-bottom: 10px
+        &__line
+            width: 95px
+        &__first-text
+            padding-top: 20px
+            margin-bottom: 20px
+        &__third-text
+            padding-top: 20px
+            margin-bottom: 20px
+    .catalog
+        &__span
+            height: 89px
+        &__box
+            padding-left: 15px
+
+    .section-form
+        padding: 25px 0
+    .form
+        &__title
+            font-size: 26px
+            margin-bottom: 10px
+        &__hr
+            width: 80px
+            margin-bottom: 25px
+        &__text
+            margin-bottom: 50px
+        &__input-contact
+            margin-bottom: 35px
+        &__input-btn
+            margin-bottom: 30px
+    .nav-menu
+        flex-direction: row
+        gap: 10px
+        &__list-bottom
+            width: 180px
+        &__item-bottom:nth-child(3)
+            justify-content: center
+            gap: 15px
